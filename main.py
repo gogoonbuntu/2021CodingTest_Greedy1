@@ -4,13 +4,15 @@ def bundan ():
 	K = a[1]
 	count = 0
 	while(N!=1):
-		mox = N%K
-		N -= mox
-		count += mox
-		div = N/K
+		if(N<K):
+			count+=N-1
+			break;
+		target = (N//K)*K
+		count += N-target
+		N = N//K
 		count +=1
-		N = div
 		print("N=",N)
+		print("count=",count)
 
 	return count
 
