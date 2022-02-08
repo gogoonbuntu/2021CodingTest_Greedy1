@@ -1,3 +1,6 @@
+# N 에 -1 혹은 나누기 K를 반복수행. N이 1이 될 때 까지. 가장 적은 횟수로.
+# 나눗셈이 가능할 때 무조건 하는 것이 좋다 (2라 해도 -1보다 훨씬 빨리 줄기 때문)
+
 def bundan ():
 	a = list(map(int, input().split()))
 	N = a[0]
@@ -17,5 +20,3 @@ def bundan ():
 	return count
 
 print(bundan())
-
-#N/K 가 나눗셈이 안될때 해결불가.
